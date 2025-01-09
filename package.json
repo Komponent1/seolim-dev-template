@@ -1,0 +1,23 @@
+{
+  "name": "template",
+  "version": "0.1.0",
+  "description": "gen_template",
+  "main": "bin.ts",
+  "bin": {
+    "gen_template": "dist/bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && copyfiles -u l template/**/** dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "copyfiles": "^2.4.1",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "typescript": "^5.7.2"
+  }
+}
